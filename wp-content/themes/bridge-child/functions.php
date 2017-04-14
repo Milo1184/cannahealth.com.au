@@ -3,7 +3,7 @@
 // enqueue the child theme stylesheet
 
 Function wp_schools_enqueue_scripts() {
-wp_enqueue_script( 'core', get_stylesheet_directory_uri() . '/core.js', array( 'jquery' ), '1.0.1', true );
+wp_enqueue_script( 'core', get_stylesheet_directory_uri() . '/core.js', array( 'jquery' ), '1.0.2', true );
 wp_register_style( 'childstyle', get_stylesheet_directory_uri() . '/style.css'  );
 wp_enqueue_style( 'childstyle' );
 }

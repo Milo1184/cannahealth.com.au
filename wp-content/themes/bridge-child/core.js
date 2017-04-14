@@ -19,7 +19,7 @@ $(document).ready(function() {
 	  }
 	});
 
-	$('#patent-forms').click(function() {
+	$('.access-forms').click(function() {
 		$('#state-pdfs').slideToggle('fast');
 
 		return false;

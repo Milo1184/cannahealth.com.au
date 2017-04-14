@@ -9,3 +9,47 @@ Template: bridge
 */
 @import url("../bridge/style.css");
 
+	.number {
+		font-size: 68px;
+		color:#1abc9c;
+		border: 1px solid #1abc9c;
+		border-radius: 100%;
+		width: 108px;
+		height: 108px;
+		line-height: 108px;
+		text-align: center;
+display:block;
+margin:0 auto;
+	}
+.number:hover {
+background-color: #1abc9c;
+color: #fff;
+}
+
+.home nav.main_menu > ul > li > a {
+color:#ffffff;
+}
+.home .scrolled nav.main_menu > ul > li > a {
+color:#9d9d9d;
+}
+.home nav.main_menu > ul > li.active.why-medical-cannabis-home-anchor > a {
+color:#ffffff;
+}
+.home .scrolled nav.main_menu > ul > li.active.why-medical-cannabis-home-anchor > a, nav.main_menu > ul > li.active.why-medical-cannabis-home-anchor > a {
+color:#9d9d9d;
+}
+
+#state-pdfs {
+display:none;
+}
+#state-pdfs a {
+width:50px;
+}
+
+nav.main_menu > ul > li.ipharmacy > a, .q_slider .qbutton {
+	text-transform: none;
+}
+
+body .gform_wrapper .ginput_full input:focus + label, body .gform_wrapper .ginput_left input:focus + label, body .gform_wrapper .ginput_right input:focus + label, body .gform_wrapper .top_label .gfield_label, body .gform_wrapper input[type="email"], body .gform_wrapper input[type="number"], body .gform_wrapper input[type="password"], body .gform_wrapper input[type="tel"], body .gform_wrapper input[type="text"], body .gform_wrapper input[type="url"], body .gform_wrapper table.gfield_list thead th, body .gform_wrapper textarea {
+	font-weight:bold;
+}

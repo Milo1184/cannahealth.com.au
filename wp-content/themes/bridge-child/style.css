@@ -58,11 +58,22 @@ color:#9d9d9d;
 	font-size: 13px;
 	height: 39px;
 	line-height: 39px;
+	transition: all 0.3s ease-in;
 }
 .patent-forms a, .patent-forms-res a {
 	width: 142px;
 	margin-left: 10px;
 	margin-right: 10px;
+}
+.patent-forms a:hover, .patent-forms-res a:hover, #state-pdfs a:hover {
+ 	background-color: #1abc9c;
+    border-color: #1abc9c;
+    color: #fff;
+    text-decoration: none;	
+}
+#state-pdfs a:hover {
+	background-color: #ea9322;
+	border-color: #ea9322;
 }
 .patent-forms-res a {
 	float: none;
@@ -98,12 +109,19 @@ body .gform_wrapper .ginput_full input:focus + label, body .gform_wrapper .ginpu
 	}
 }
 @media (max-width: 480px) {
+	.patent-forms a, .patent-forms-res a {
+		width: 250px;
+	}
 	#state-pdfs .wpb_wrapper p {
-		width: 100%;
+		width: 150px;
 	}
 	#state-pdfs a {
-		float: none;
+		float: left;
 		display: block;
-		margin: 5px auto;
+		width: 70px;
+		margin: 5px 0px;
+	}
+	#state-pdfs a:nth-child(even) {
+		margin-left: 2px;
 	}
 }

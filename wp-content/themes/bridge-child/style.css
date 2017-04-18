@@ -8,22 +8,17 @@ Version: 1.0.0
 Template: bridge
 */
 @import url("../bridge/style.css");
-
-	.number {
+	.number p {
 		font-size: 68px;
-		color:#1abc9c;
-		border: 1px solid #1abc9c;
-		border-radius: 100%;
-		width: 108px;
-		height: 108px;
-		line-height: 108px;
+		color:#1bbb9b;
 		text-align: center;
-display:block;
-margin:0 auto;
+		line-height: 1;
+		font-family: Raleway;
+		font-weight: 700;
+		transition: all 0.2s ease-in;
 	}
-.number:hover {
-background-color: #1abc9c;
-color: #fff;
+.number p:hover {
+	color: #ea9322;
 }
 
 .home nav.main_menu > ul > li > a {
@@ -66,10 +61,14 @@ color:#9d9d9d;
 	margin-right: 10px;
 }
 .patent-forms a:hover, .patent-forms-res a:hover, #state-pdfs a:hover {
- 	background-color: #1abc9c;
-    border-color: #1abc9c;
+ 	background-color: #ea9322;
+    border-color: #ea9322;
     color: #fff;
     text-decoration: none;	
+}
+.patent-forms a:nth-child(1):hover, .patent-forms-res a:nth-child(1):hover {
+ 	background-color: #1abc9c;
+    border-color: #1abc9c;
 }
 #state-pdfs a:hover {
 	background-color: #ea9322;
@@ -100,12 +99,79 @@ body .gform_wrapper .ginput_full input:focus + label, body .gform_wrapper .ginpu
 	font-weight:bold;
 }
 
+/* Gform Resets */
+.gform_wrapper {
+	width: 600px;
+	margin: 20px auto;
+}
+.gform_footer {
+	width: 100%;
+}
+.gform_wrapper label{
+	display: none;
+}
+.gform_wrapper input {
+	background-color: rgb(244, 244, 244);
+    border-style: solid;
+    border-width: 0;
+    color: #707070;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 14px;
+    margin-bottom: 5px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    text-transform: none;
+	opacity: 0.6;
+}
+.gform_wrapper .gform_button.button {
+	opacity: 1;
+	margin: 0 auto;
+	display: block;
+}
+.gform_wrapper input:focus {
+	opacity: 1;
+}
+.name_last input, .name_first input, .ginput_container_email input, textarea, body .gform_wrapper input[type="email"], body .gform_wrapper input[type="number"], body .gform_wrapper input[type="password"], body .gform_wrapper input[type="tel"], body .gform_wrapper input[type="text"], body .gform_wrapper input[type="url"], body .gform_wrapper select, body .gform_wrapper textarea, body .gform_wrapper.gf_browser_chrome .ginput_complex .ginput_right select, body .gform_wrapper.gf_browser_chrome .ginput_complex select {
+	padding-left: 5% !important;
+	padding-right: 5% !important;
+	width: 100%;
+}
+.gform_fields, .gfield_radio, .gfield_checkbox {
+	list-style-type: none;
+}
+.gform_fields .states, .gform_fields .medical-indication {
+	float: left;
+	width: 50%;
+}
+.gform_fields .medical-indication::after {
+	clear: both;
+}
+#field_1_8 .gfield_label, #field_1_6 .gfield_label {
+	display: block;
+}
+.gfield_radio label, .gfield_checkbox label {
+	display: inline-block;
+	margin-left: 5px;
+}
 @media (max-width: 640px) {
 	.patent-forms {
 		display: none;
 	}
 	.patent-forms-res {
 		display: block;
+	}
+}
+@media (max-width: 620px) {
+	.gform_wrapper {
+		width: 90%;
+	}
+	.gform_fields .states, .gform_fields .medical-indication {
+		float: none;
+		width: 100%;
 	}
 }
 @media (max-width: 480px) {

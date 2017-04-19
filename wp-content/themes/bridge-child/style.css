@@ -9,7 +9,7 @@ Template: bridge
 */
 @import url("../bridge/style.css");
 	.number p {
-		font-size: 68px;
+		font-size: 48px;
 		color:#1bbb9b;
 		text-align: center;
 		line-height: 1;
